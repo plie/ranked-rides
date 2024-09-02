@@ -11,6 +11,7 @@ module RankedRides
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
+    Dotenv::Rails.load
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
@@ -18,5 +19,10 @@ module RankedRides
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    config.time_zone = 'UTC'
+    config.active_record.default_timezone = :utc
+
+    config.autoload_paths += %W(#{config.root}/app/services)
   end
 end

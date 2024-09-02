@@ -10,13 +10,19 @@ gem "rails", "~> 7.0.2", ">= 7.0.2.2"
 gem "sprockets-rails"
 
 # Use sqlite3 as the database for Active Record
-# gem "sqlite3", "~> 1.4"
+gem "sqlite3", "~> 1.4"
 
-gem 'pg'
+# gem 'pg'
 
-gem 'bootstrap', '~> 5.0'
+# gem 'bootstrap', '~> 5.0'
 
 gem 'google_directions'
+
+gem 'dotenv-rails', groups: [:development, :test]
+
+gem 'kaminari'
+
+gem 'httparty'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
@@ -78,4 +84,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  # gem 'faker' # for generating fake data with RSpec
+  gem 'shoulda-matchers', '~> 5.0'
 end
