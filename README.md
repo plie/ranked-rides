@@ -8,7 +8,7 @@ Ranked Rides is an API that delivers paginated JSON of rides, ranking them from 
 ```
 Where earnings are calculated as:
 ```txt
-$12 + $1.50/mile beyond 5 miles + (ride duration) * $0.70 per minute beyond 15 minutes.
+\$12 + \$1.50/mile beyond 5 miles + (ride duration) * \$0.70 per minute beyond 15 minutes.
 ```
 
 ## Ruby version
