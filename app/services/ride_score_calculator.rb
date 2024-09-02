@@ -7,10 +7,3 @@ class RideScoreCalculator
     (ride_earnings / (commute_duration + ride_duration)).round(2)
   end
 end
-
-# RideScoreCalculator
-# ride_score - $ per hour
-# requires ride_earnings, commute_duration, ride_duration
-# Caluation:
-# ride_earnings / commute_duration + ride_duration
-# higher score is better

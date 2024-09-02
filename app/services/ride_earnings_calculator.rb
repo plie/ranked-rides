@@ -17,8 +17,3 @@ class RideEarningsCalculator
     earnings * beyond_minimim
   end
 end
-
-  # how much the driver earns by driving the ride.
-  # Takes into account: ride_duration and ride_distance
-  # Calculation:
-  # $12 + $1.50 per mile beyond 5 miles + (ride_duration) * $0.70 per minute beyond 15 minutes
