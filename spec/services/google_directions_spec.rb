@@ -1,5 +1,4 @@
 # Sample response from Google Directions API:
-# TODO: create specs
 {
   "geocoded_waypoints" : [
      {
