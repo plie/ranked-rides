@@ -7,13 +7,11 @@ RSpec.describe Trip, type: :model do
 
   describe 'initialization' do
     it 'initializes with a ride and a driver' do
-      # binding.pry # ride, driver, trip.ride, trip.driver
       expect(trip.ride).to eq(ride)
       expect(trip.driver).to eq(driver)
     end
 
     it 'initializes commute_distance and commute_duration' do
-      # binding.pry # trip.commute_distance, trip.commute_duration
       expect(trip.commute_distance).to be_a(Float)
       expect(trip.commute_duration).to be_a(Float)
     end
@@ -38,7 +36,6 @@ RSpec.describe Trip, type: :model do
         ride_duration: ride.ride_duration
       }
 
-      # binding.pry # args
       allow(trip).to receive(:earnings).and_return(12.0)
       allow(trip).to receive(:commute_duration).and_return(0.1)
       allow(RideScoreCalculator).to receive(:ride_score).with(args).and_return(0.2)
